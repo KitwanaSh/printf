@@ -129,3 +129,5 @@ int _print_pointer(va_list args)
 			count++;
 		}
 	}
+	return (count);
+}

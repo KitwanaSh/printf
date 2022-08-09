@@ -107,3 +107,5 @@ int _print_octal(va_list args)
 			count++;
 		}
 	}
+	return (count);
+}
