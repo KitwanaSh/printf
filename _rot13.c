@@ -34,3 +34,5 @@ int _print_rot13(va_list args)
 			count++;
 		}
 	}
+	return (count);
+}
