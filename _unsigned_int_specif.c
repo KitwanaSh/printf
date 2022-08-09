@@ -32,11 +32,12 @@ int _print_binary(va_list args)
 	}
 	return (count);
 }
-/*
- * _print_uint - prints an unsigned in in decimal notation
- * @args: arguments
+
+/**
+ * _print_uint - Prints the unsigned decimal funtions.
+ * @args: argument list variable
  *
- * Return: number of digits printed
+ * Return:  the arguments of unsigned int.
  */
 int _print_uint(va_list args)
 {
