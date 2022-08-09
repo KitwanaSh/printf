@@ -2,18 +2,17 @@
 #define MAIN_H
 
 #include <stdarg.h>
-#include <stdio.h>
+#include <stdlib.h>
 
 /**
- * struct op - define the structure
+ * struct printer - define the structure
  *
- * @c: the symbol pointer of char
+ * @specifier: the symbol pointer of char
  * @f: the funtion with it
  */
-struct ops
+typedef struct printer
 {
-	char *c;
+	char *specifier;
 	int (*f)(va_list);
-};
-typedef struct ops op_t;
+} printer;
 #endif
