@@ -90,16 +90,10 @@ int _print_str_nonprintable(va_list args)
 	return (count);
 }
 /**
- *
- *  * _print_str_reverse - prints a string in reverse
- *
- *   * @args: arguments list
- *
- *    *
- *
- *     * Return: number of chars printed
- *
- *      */
+ * _print_str_reverse - prints a string in reverse
+ * @args: arguments list
+ * Return: number of chars printed
+ */
 
 int _print_str_reverse(va_list args)
 
