@@ -96,10 +96,10 @@ int _print_str_nonprintable(va_list args)
  */
 
 int _print_str_reverse(va_list args)
-
 {
 	char *str;
 	int i, count = 0;
+
 	str = va_arg(args, char *);
 	if (str == NULL)
 		str = ")llun(";
