@@ -33,7 +33,7 @@ int _print_binary(va_list args)
 }
 
 /**
- * _print_uint - 
+ * _print_uint - prints an unsigned in in decimal notation
  * @args: arguments
  *
  * Return: number of digits printed
@@ -60,3 +60,6 @@ int _print_uint(va_list args)
 			_putchar('0' + a[i]);
 			count++;
 		}
+	}
+	return (count);
+}
