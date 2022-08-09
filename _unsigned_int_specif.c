@@ -15,6 +15,7 @@ int _print_binary(va_list args)
 	n = va_arg(args, unsigned int);
 	m = 2147483648; /* (2 ^ 31) */
 	a[0] = n / m;
+
 	for (i = 1; i < 32; i++)
 	{
 		m /= 2;
@@ -33,7 +34,7 @@ int _print_binary(va_list args)
 }
 
 /**
- * _print_uint - prints an unsigned in in decimal notation
+ * _print_uint - 
  * @args: arguments
  *
  * Return: number of digits printed

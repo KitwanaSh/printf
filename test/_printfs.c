@@ -46,7 +46,7 @@ int _printf(const char *format, ...)
 		printer = _get_printer(&format[i + 1]);
 		if (printer.specifier != NULL)
 		{
-			characters_printed += printer.run(args);
+			characters_printed += printer.f(args);
 			i += 2; /* move past the specifier */
 			continue;
 		}
