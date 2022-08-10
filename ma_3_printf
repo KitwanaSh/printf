@@ -34,7 +34,6 @@ In between the \fB%\fR character and conversion specifier, there may be (in
 order) zero or more \fIflags\fR, an optional minimum \fIfield width\fR, an
 optional \fIprecision\fR and an optional \fIlength\fR modifier. The arguments
 must correspond with the conversion specifier, and are used in the order given.
-
 .in
 
 .B Flag Characters
@@ -49,7 +48,6 @@ with 0 if it was not zero already. For x and X converions, 0x or 0X,
 respectively, is prepended for non-zero numbers.
 .in
 .RE
-
 
 .RS
 .B ''
@@ -97,7 +95,6 @@ For example, in the following:
 
 .in +2n
 _printf("%*d\\n", 6, 1);
-
 .in
 
 .in +2nn
@@ -119,6 +116,7 @@ after the '.'. For example, in the following:
 .in +2n
 _printf("%.*d\\n", 6, 1);
 .in
+
 
 .in +2n
 the argument 6 is considered the precision for the conversion of the decimal 1.
@@ -165,6 +163,7 @@ resulting character is written.
 .B s
 .in +2n
 The \fIconst char *\fR argument is expected to be a pointer to a character
+
 array (pointer to a string). Characters from the array are written starting
 from the first element of the array and ending at, but not including, the
 terminating null byte ('\\0').
@@ -243,6 +242,7 @@ int main(void)
 
 To print the result of basic mathematical operations prepended by signs and
 all numbers printed with a minimum precision of two digits:
+
 
 .RS
 #include "main.h"
