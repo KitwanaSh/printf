@@ -1,7 +1,22 @@
 #ifndef MAIN_H
 #define MAIN_H
+
 #include <stdarg.h>
 #include <stdlib.h>
+
+/**
+ * struct flags - structure containing flags to
+ * 'turn on' whenever we find it in printf.
+ * @plus: flag for the '+' char.
+ * @space: flag for the ' ' char.
+ * @hash: flag for the '#' char.
+ */
+typedef struct flags
+{
+	int plus;
+	int space;
+	int hash;
+} flags_t;
 
 /**
  * struct printer - define the structure
@@ -30,4 +45,5 @@ int _print_octal(va_list);
 int _print_hex_lower(va_list);
 int _print_hex_upper(va_list);
 int _print_pointer(va_list);
+int get_flag(char s, flags_t *f);
 #endif /* MAIN_H */
